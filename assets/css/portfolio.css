@@ -5,12 +5,13 @@
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
 }
 
 .header{
   min-height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.331), rgba(4, 9, 30, 0.297)), url(assets/images/picture.jpeg);
+  background-image: linear-gradient(rgba(4, 9, 30, 0.507), rgba(4, 9, 30, 0.516)), url(assets/images/galleryphoto.jpeg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -68,6 +69,117 @@ nav img{
 
 .nav-links ul li:hover::after {
   width: 100%;
+}
+
+
+.container2{
+  max-width: 1240px;
+  margin: auto;
+}
+
+.row2{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio{
+  background-color: #fff;
+  padding: 100px 7px;
+}
+
+.section-title3{
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 40px;
+}
+
+.section-title3 h1{
+  display: inline-block;
+  font-size: 35px;
+  font-weight: 700;
+  color: #000;
+  margin: 0 0 5px;
+  position: relative;
+}
+
+.text-center{
+  text-align: center;
+}
+
+
+.portfolio .section-title3 h1:before{
+  left: 30%;
+}
+
+.portfolio .filter-buttons{
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.portfolio .filter-buttons ul{
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+.portfolio .filter-buttons ul li{
+  color:black;
+  font-weight: 500;
+  display: inline-block;
+  margin: 0px 8px;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding-bottom: 0px;
+}
+
+.portfolio .filter-buttons ul li.active2{
+  color: #5f9bce;
+  border-bottom: 2px solid #5f9bce;
+
+}
+
+.portfolio .portfolio-gallery {
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio .portfolio-gallery .item{
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  position: relative;
+  padding: 8px;
+}
+
+.portfolio .portfolio-gallery .item .inner{
+  position: relative;
+}
+
+.portfolio .portfolio-gallery .item img{
+  width: 100%;
+  height: 320px;
+  display: block;
+}
+
+
+/* Gallery Responsive Section */
+@media(max-width: 767px) {
+  .portfolio .portfolio-gallery .item{
+    flex: 0 0 50%;
+    max-width: 50%;
+    position: relative;
+    padding: 8px;
+  }
+}
+
+@media(max-width: 500px) {
+  .portfolio .portfolio-gallery .item{
+    flex: 0 0 100%;
+    max-width: 100%;
+  
+  }
 }
 
 
@@ -253,6 +365,138 @@ h4 {
 
 
 
+/* Service Section */
+#services .services{
+  flex-direction: column;
+  text-align: center;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+#services .service-top{
+  width: 88%;
+  max-width: 0 auto;
+}
+
+
+#services .service-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+#services .service-item{
+  flex-basis: 80%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 10px;
+  background-image: url(https://www.steelmastersnyc.com/wp-content/uploads/2018/12/iron-works.jpg);
+  background-size: cover;
+  margin: 10px 5%;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.contactusp {
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #00aeef;
+}
+
+.container3 {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#services .service-item::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  opacity: .8;
+  z-index: -1;
+}
+
+.services .service-bottom .icon{
+  height: 80px;
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+#services .service-bottom .icon img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+#services .service-item h2{
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+#services .service-item p{
+  color:white;
+  text-align: left;
+}
+
+.section-title{
+  font-size: 4rem;
+  font-weight: 300;
+  color: black;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  text-align: center;
+}
+.section-title span {
+  color: #00aeef;
+}
+
+.section-title2{
+  font-size: 2.8rem;
+  font-weight: 300;
+  color: black;
+  margin-bottom: 10px;
+  letter-spacing: .2rem;
+  text-align: center;
+}
+.section-title2 span {
+  color: crimson;
+}
+
+@media only screen and (min-width:768px){
+  /* Service Section */
+  #services .service-bottom .service-item{
+      flex-basis: 45%;
+      margin: 1.5%;
+  }
+  h1 .section-title .section-title2{
+    font-size: 7rem;
+}
+}
+
+@media only sreen and (min-width: 1200px){
+  #services .service-bottom .service-item{
+      flex-basis: 22%;
+      margin: 1.5%;
+  }
+}
 
 
 
@@ -482,7 +726,107 @@ h4 {
 }
 
 /* end: property details styles */
+/* Testimonials */
 
+
+.section-title{
+    font-size: 3.7rem;
+    font-weight: 300;
+    color: rgb(92, 85, 85);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+    
+  }
+  .section-title span {
+    color: #00aeef;
+  }
+  
+  .section-title2{
+    font-size: 2.8rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    letter-spacing: .2rem;
+    text-align: center;
+  }
+  .section-title2 span {
+    color: crimson;
+  }
+
+/* start: contact styles */
+
+#contact {
+    margin-bottom: 0;
+    background: #f8f9fa;
+    padding: 4rem 0 8rem;
+  }
+  
+  #form-container {
+    background: #fff;
+    padding: 3rem;
+    box-sizing: border-box;
+  }
+  
+  #form-container h3 {
+    color: #000;
+    font-family: "Playfair Display", serif;
+    margin-bottom: 2rem;
+  }
+  
+  #form-container label {
+    display: block;
+    color: #000;
+    margin-top: 1rem;
+  }
+  
+  #form-container input, #form-container textarea {
+    display: block;
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    width: 100%;
+    box-sizing: border-box;
+    height: 43px;
+    font-family: "Roboto", "Helvetica", "Sans-serif";
+    font-size: 1rem;
+    color: #495057;
+  }
+  
+  #form-container textarea {
+    height: 170px;
+    margin-bottom: 2rem;
+    resize: none;
+  }
+
+  button.rounded {
+    background: #5f9bce;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 30px;
+    padding: 10px 30px;
+    line-height: 1.5;
+    cursor: pointer;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    color: #5f9bce;
+    margin-bottom: 3rem;
+    font-family: "Playfair Display", serif;
+  font-weight: 800;
+  line-height: 1.2;
+  }
+  
+  h3 {
+    font-size: 1.4rem;
+    font-weight: 300;
+    border-bottom: 1px solid #999;
+    margin-bottom: 1rem;
+  }
+  /* end: contact us styles */
 
 /* start: footer styles */
 
@@ -660,6 +1004,12 @@ footer small a:hover {
     margin-top: 0.5rem;
     color: rgb(86, 92, 92);
 }
+h2 {
+    font-size: 1.75rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
 
   h4 {
     font-size: 1.75rem;
@@ -866,7 +1216,7 @@ footer small a:hover {
   #contact {
     padding: 4rem 0;
   }
-  #contact h4 {
+  #contact h2 {
     margin-bottom: 2rem;
   }
   #form-container {
@@ -885,7 +1235,6 @@ footer small a:hover {
   }
   
 }
-
 
 
 
