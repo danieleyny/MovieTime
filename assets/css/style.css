@@ -10,7 +10,7 @@
 .header{
   min-height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.331), rgba(4, 9, 30, 0.297)), url(assets/images/picture.jpeg);
+  background-image: linear-gradient(rgba(4, 9, 30, 0.622), rgba(4, 9, 30, 0.312)), url(/assets/images/indexbkgimg.png);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -48,6 +48,7 @@ nav img{
   display: inline-block;
   padding: 8px 12px;
   position: relative;
+  margin: 0px 10px 0px 0px;
 }
 
 .nav-links ul li a{
