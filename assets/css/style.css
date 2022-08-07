@@ -10,7 +10,7 @@
 .header{
   min-height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.622), rgba(4, 9, 30, 0.312)), url(/assets/images/indexbkgimg.png);
+  background-image: linear-gradient(rgba(4, 9, 30, 0.625), rgba(4, 9, 30, 0.469)), url(../images/indexbkgimg.png);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -89,6 +89,7 @@ nav img{
 
 .text-box h1{
   font-size: 62px;
+  
 }
 
 .text-box p{
@@ -102,12 +103,13 @@ nav img{
   text-decoration: none;
   color: white;
   border: 1px solid #fff;
-  padding: 12px 34px;
+  padding: 12px 30px;
   font-size: 13px;
   background: transparent;
   position: relative;
   cursor: pointer;
-
+  font-weight: 900;
+margin-top: 100px;
 }
 
 .hero-btn:hover {
