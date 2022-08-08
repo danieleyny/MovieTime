@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Varela+Round&display=swap');
 
 *{
   margin: 0;
@@ -10,7 +10,7 @@
 .header{
   min-height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.625), rgba(4, 9, 30, 0.469)), url(../images/indexbkgimg.png);
+  background-image: linear-gradient(rgba(4, 9, 30, 0.729), rgba(4, 9, 30, 0.67)), url(../images/indexbkgimg.png);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -35,11 +35,11 @@ nav img{
 }
 
 
+
 .nav-links ul li a.active {
   font-weight: bolder;
   padding: 4px;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
+  
 }
 
 
@@ -74,12 +74,17 @@ nav img{
 
 
 
-
+.txt-type > .txt {
+  border-right: 0.2rem solid rgb(255, 255, 255);
+  font-size: 18px;
+  font-size: 62px;
+  font-family: 'Varela Round', sans-serif;
+}
 
 
 .text-box{
   width: 90%;
-  color: #fff;
+  color: rgb(255, 255, 255);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -87,35 +92,38 @@ nav img{
   text-align: center;
 }
 
-.text-box h1{
-  font-size: 62px;
-  
-}
+
+
 
 .text-box p{
   margin: 10px 0 40px;
   font-size: 14px;
   color: #fff;
+  margin-top: 50px;
 }
 
 .hero-btn {
   display: inline-block;
   text-decoration: none;
-  color: white;
-  border: 1px solid #fff;
-  padding: 12px 30px;
-  font-size: 13px;
+  padding: 13px 30px;
+  font-size: 14px;
   background: transparent;
   position: relative;
   cursor: pointer;
   font-weight: 900;
-margin-top: 100px;
+margin-top: 70px;
+border-radius: 25px;
+border: 1px solid #5f9bce;
+  background-color: #5f9bce;
+  color: white;
+
 }
 
 .hero-btn:hover {
-  border: 1px solid #5f9bce;
-  background: #5f9bce;
-  transition: 1s;
+  color: white;
+  border: 1px solid #fff;
+  background-color: transparent;
+  transition: 1.2s;
 }
 
 nav .fa{
@@ -126,8 +134,8 @@ nav .fa{
 
   html, body {overflow-x: hidden;}
 
-  .text-box h1{
-      font-size: 20px;
+  .txt-type h1{
+      font-size: 35px;
   }
   .nav-links ul li a:hover, .nav-links ul li a.active {
     color: #5f9bce;
