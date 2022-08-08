@@ -9,9 +9,7 @@
 }
 
 .header{
-  min-height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.507), rgba(4, 9, 30, 0.516)), url(assets/images/galleryphoto.jpeg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -22,6 +20,8 @@ nav{
   padding: 2% 6%;
   justify-content: space-between;
   align-items: center;
+  background-color: #303235;
+  height: 80px;
 }
 
 nav img{
@@ -31,7 +31,7 @@ nav img{
 
 .nav-links {
   flex: 1;
-  text-align: right;
+  text-align: center;
   
 }
 
@@ -39,8 +39,7 @@ nav img{
 .nav-links ul li a.active {
   font-weight: bolder;
   padding: 4px;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
+  
 }
 
 
@@ -49,12 +48,14 @@ nav img{
   display: inline-block;
   padding: 8px 12px;
   position: relative;
+  margin: 0px 10px 0px 0px;
+
 }
 
 .nav-links ul li a{
   color: white;
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .nav-links ul li:after{
@@ -231,7 +232,7 @@ nav .fa{
   display: none;
 }
 
-@media(max-width: 700px) {
+@media(max-width: 835px) {
 
   html, body {overflow-x: hidden;}
 
@@ -253,7 +254,7 @@ nav .fa{
   }
   .nav-links{
     position: absolute;
-    background: #b1bcc5;
+    background: #303235;
     height: 100vh;
     width: 200px; 
     top: 0;
