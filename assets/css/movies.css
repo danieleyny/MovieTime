@@ -284,7 +284,6 @@ nav .fa{
   width: 80%; 
   margin: auto;
   text-align: center;
-  padding-top:100px ;
 }
 h1{
   font-size: 36px;
@@ -502,7 +501,6 @@ h4 {
 
 
 
-
 /* start: main property styles */
 
 #property-details {
@@ -645,6 +643,11 @@ h4 {
 #properties-slider img {
   width: 100%;
   display: block;
+}
+
+#properties-slider iframe{
+  width: 75px;
+  height: 50px;
 }
 
 #properties-slider .property-details {

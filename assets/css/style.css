@@ -183,7 +183,6 @@ nav .fa{
   width: 80%; 
   margin: auto;
   text-align: center;
-  padding-top:100px ;
 }
 h1{
   font-size: 36px;
@@ -399,11 +398,14 @@ h4 {
   right: 0;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
+  
 }
 
 #properties-slider a.slick-prev {
   right: 80px;
+  
 }
+
 
 #properties-slider .slick-slide {
   padding: 0 15px;
