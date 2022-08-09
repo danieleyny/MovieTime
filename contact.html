@@ -1,11 +1,169 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Movies</title>
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link href="./assets/css/movies.css" type="text/css" rel="Stylesheet" />
+  <link href="./assets/css/contact.css" type="text/css" rel="Stylesheet" />
+  <link rel="shortcut icon" href="assets/images/nycityworkslogo.png"/>
+
+  <link rel="icon" type="image/png" href="./assets/images/Movie Time.png">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/95dc93da07.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
 </head>
+
 <body>
-    <h>contact page</h>
+
+
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="./assets/images/Movie Time (1).png"></a>
+        <div class="nav-links" id="navLinks"> 
+            <i class='fa fa-times' onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="movies.html" >Movies</a></li>
+                <li><a href="submissions.html" >Submissions</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
+            </ul>
+        </div>
+        <i class='fa fa-bars' onclick="showMenu()"></i>
+    </nav>
+
+   
+</section>
+
+
+
+
+
+
+
+
+<section id="contact">
+  
+    <h1 class="section-header">Contact Us</h1>
+    
+    <div class="contact-wrapper">
+    
+    <!-- Left contact page --> 
+      
+      <form id="contact-form" class="form-horizontal" role="form">
+         
+        <div class="form-group">
+          <div class="col-sm-12">
+            <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+          </div>
+        </div>
+  
+        <div class="form-group">
+          <div class="col-sm-12">
+            <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+          </div>
+        </div>
+  
+        <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+        
+        <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+          <div class="alt-send-button">
+            <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+          </div>
+        
+        </button>
+        
+      </form>
+      
+    <!-- Left contact page --> 
+      
+        <div class="direct-contact-container">
+  
+          <ul class="contact-list">
+            <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">City, State</span></i></li>
+            
+            <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">(212) 555-2368</a></span></i></li>
+            
+            <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">hitmeup@gmail.com</a></span></i></li>
+            
+          </ul>
+  
+          <hr>
+          <ul class="social-media-list">
+            <li><a href="#" target="_blank" class="contact-icon">
+              <i class="fa fa-github" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="#" target="_blank" class="contact-icon">
+              <i class="fa fa-codepen" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="#" target="_blank" class="contact-icon">
+              <i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="#" target="_blank" class="contact-icon">
+              <i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </li>       
+          </ul>
+          <hr>
+  
+          <div class="copyright">&copy; ALL RIGHTS RESERVED</div>
+  
+        </div>
+      
+    </div>
+    
+  </section>  
+    
+    
+
+
+
+
+
+
+
+
+
+<footer>
+    <div class="flex container5">
+      <div class="footer-about">
+        <h5>About NY City Iron Works Corp.</h5>
+        <p>We are poo caca , a real estate company that has been in the property management business for over two decades now. We own buildings across the upper west side in New York and have managed to expand to Florida. We take pride in running a straight forward and fair business with our clients. Always maintaining communication and proving our loyalty.</p>
+      </div>
+
+      <div class="footer-quick-links">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="about.html">Rental Process</a></li>
+          <li><a href="about.html">Reviews</a></li>
+          <li><a href="properties.html">Apartment Listings</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-subscribe">
+        
+
+        <h5 class="follow-us">Follow Us</h5>
+        <ul>
+          <li><a href="https://www.facebook.com/daniel.eyny"><span class="fab fa-facebook-f"></span></a></li>
+          <li><a href="https://www.instagram.com/danieleyny/?hl=en"><span class="fab fa-instagram"></span></a></li>
+          <li><a href="https://www.linkedin.com/in/daniel-eyny"><span class="fab fa-linkedin-in"></span></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <small>
+      Copyright &copy; 2021 All rights reserved | NY City Iron Works Corp.
+    </small>
+  </footer>
 </body>
+
+
 </html>
