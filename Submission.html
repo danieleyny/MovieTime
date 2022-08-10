@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Movie Time</title>
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link href="./assets/css/movies.css" type="text/css" rel="Stylesheet" />
+  <link href="./assets/css/submission.css" type="text/css" rel="Stylesheet" />
+  <link rel="shortcut icon" href="assets/images/nycityworkslogo.png"/>
+
+  <link rel="icon" type="image/png" href="./assets/images/Movie Time.png">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/95dc93da07.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+</head>
+
+<body>
+
+
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="./assets/images/Movie Time (1).png"></a>
+        <div class="nav-links" id="navLinks"> 
+            <i class='fa fa-times' onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="Submission.html" class="active">Submissions</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <i class='fa fa-bars' onclick="showMenu()"></i>
+    </nav>
+</section>
+
+
+
+    <section class="submission-form-bkg">
+    <div class="login-box" id="container" >
+        <h2 >Submission Form</h2>
+        <form action="https://formspree.io/f/mnqrqnja" method="POST">
+          <div class="user-box">
+            <input type="text" name="First Name: " required>
+            <label>First Name </label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="Last Name: " required>
+            <label>Last Name </label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="Project Name: " required>
+            <label>Project Name </label>
+          </div>
+          <div class="file-input">
+            <input name="Movie File: " type="file"
+            accept="video.mp4, image/jpeg">
+            
+          </div>
+          
+          <button type="submit">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Submit
+          </button>
+       
+        </form>
+      </div>
+      
+     
+ 
+    </section>
+  
+  <footer>
+    <div class="flex container5">
+      <div class="footer-about">
+        <h5>About Movie Time</h5>
+        <p>This is page made to showcase the work of proud students who made their own movies.</p>
+      </div>
+
+      <div class="footer-quick-links">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="about.html">Submission Process</a></li>
+          <li><a href="movies.html">Movies</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="submission.html">Submit your Work</a>
+        </ul>
+      </div>
+
+      <div class="footer-subscribe">
+        
+
+        <h5 class="follow-us">Follow Us</h5>
+        <ul>
+          <li><a href="https://www.facebook.com/daniel.eyny"><span class="fab fa-facebook-f"></span></a></li>
+          <li><a href="https://www.instagram.com/danieleyny/?hl=en"><span class="fab fa-instagram"></span></a></li>
+          <li><a href="https://www.linkedin.com/in/daniel-eyny"><span class="fab fa-linkedin-in"></span></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <small>
+      Copyright &copy; 2022 All rights reserved | MovieTime.
+    </small>
+  </footer>
+</body>
+
+
+
+
+
+<script src="./assets/js/main.js"></script>
+
+
+</html>
