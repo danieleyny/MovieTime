@@ -44,17 +44,17 @@
     <section class="submission-form-bkg">
     <div class="login-box" id="container" >
         <h2 >Submission Form</h2>
-        <form action="https://formspree.io/f/mnqrqnja" method="POST">
+        <form action="https://sheetdb.io/api/v1/df68tdabjupca" method="POST" id="sheetdb-form">
           <div class="user-box">
-            <input type="text" name="First Name: " required>
+            <input type="text" name="data[First]" required>
             <label>First Name </label>
           </div>
           <div class="user-box">
-            <input type="text" name="Last Name: " required>
+            <input type="text" name="data[Last]" required>
             <label>Last Name </label>
           </div>
           <div class="user-box">
-            <input type="text" name="Project Name: " required>
+            <input type="text" name="data[Project]" required>
             <label>Project Name </label>
           </div>
           <div class="file-input">
@@ -74,6 +74,23 @@
         </form>
       </div>
       
+      <script>
+        var form = document.getElementById('sheetdb-form');
+    form.addEventListener("submit", e => {
+      e.preventDefault();
+      fetch(form.action, {
+          method : "POST",
+          body: new FormData(document.getElementById("sheetdb-form")),
+      }).then(
+          response => response.json()
+      ).then((html) => {
+        // you can put any JS code here
+        window.open('index.html', '_blank');
+
+      });
+    });
+    </script>
+    
      
  
     </section>
