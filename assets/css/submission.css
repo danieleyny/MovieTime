@@ -30,13 +30,14 @@ body {
 
 #container{
   width: 350px;
-  height: 500px;
+  height: 540px;
   position: center;
   overflow: hidden;
   top: 50%;
   left: 50%;
   margin-top: -49px;
   border-radius: 8px;
+  background-color: rgba(66, 66, 66, 0.623);
 }
 @media (max-width: 500px){
   #container{
@@ -165,7 +166,7 @@ body {
   }
 }
 
-.login-box a span:nth-child(2) {
+.login-box button span:nth-child(2) {
   top: -100%;
   right: 0;
   width: 2px;
