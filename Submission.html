@@ -21,7 +21,7 @@
 
 <body>
 
-
+<!--This is the header with all of the Navigation links-->>
 <section class="header">
     <nav>
         <a href="index.html"><img src="./assets/images/Movie Time (1).png"></a>
@@ -39,7 +39,7 @@
     </nav>
 </section>
 
-
+<!--Code for the Form-->>
 
     <section class="submission-form-bkg">
     <div class="login-box" id="container" >
@@ -57,23 +57,20 @@
             <input type="text" name="data[Project]" required>
             <label>Project Name </label>
           </div>
-          <div class="file-input">
-            <input name="Movie File: " type="file"
-            accept="video.mp4, image/jpeg">
-            
-          </div>
-          
-          <button type="submit">
+        </br> 
+  
+          <button type="submit" href="https://drive.google.com/drive/folders/1NBuTnYpr9ZmLYOdNrjOIHbi-WzUWNvep?usp=sharing">
             <span></span>
             <span></span>
             <span></span>
             <span></span>
-            Submit
+            Click Here to Submit Work 
           </button>
        
         </form>
       </div>
-      
+      <!-- Javascript connecting the submission form to the excel API-->
+
       <script>
         var form = document.getElementById('sheetdb-form');
     form.addEventListener("submit", e => {
@@ -84,16 +81,15 @@
       }).then(
           response => response.json()
       ).then((html) => {
-        // you can put any JS code here
-        window.open('index.html', '_blank');
+        
+        window.open("https://drive.google.com/drive/folders/1NBuTnYpr9ZmLYOdNrjOIHbi-WzUWNvep?usp=sharing", '_blank');
 
       });
     });
     </script>
-    
-     
- 
     </section>
+
+    <!--This is the code for the footer on the bottom of the page-->>
   
   <footer>
     <div class="flex container5">
@@ -115,7 +111,7 @@
 
       <div class="footer-subscribe">
         
-
+<!--This is the section for the social media-->
         <h5 class="follow-us">Follow Us</h5>
         <ul>
           <li><a href="https://www.facebook.com/daniel.eyny"><span class="fab fa-facebook-f"></span></a></li>
