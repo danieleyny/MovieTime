@@ -30,7 +30,7 @@ body {
 
 #container{
   width: 350px;
-  height: 540px;
+  height: 560px;
   position: center;
   overflow: hidden;
   top: 50%;
@@ -59,6 +59,9 @@ body {
   filter: blur(10px);
 }
 
+.instructions {
+  color: #fff
+}
 .login-box h2 {
   margin: 0 0 30px;
   padding: 0;
